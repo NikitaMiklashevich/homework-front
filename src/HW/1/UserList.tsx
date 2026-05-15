@@ -22,12 +22,12 @@ export const UserList = (props: UserListPropsType) => {
             <ul>
                 {props.users.map((user) => (
 
-                        <li key={user.id} id={`user.id}`}>
-                            <strong>{user.name}</strong> (Age: {user.age})<strong> Address:</strong>
-                            {user.address.street}, {user.address.city}
-                        </li>
-                        ))}
-                    </ul>
-                    </div>
-                    );
-                };
+                    <li key={user.id} id={`user.id`}>
+                        <strong>{user.name}</strong> (Age: {user.age})<strong> Address:</strong>
+                        {user.address.street}, {user.address.city}
+                    </li>
+                ))}
+            </ul>
+        </div>
+    );
+};
